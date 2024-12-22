@@ -1,0 +1,106 @@
+﻿@keyframes slide-in {
+    0% {
+        transform: translateX(-10px);
+      opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.popup-profile {
+    position: fixed;
+    right: 250px;
+    width: 330px;
+    background: $bg-quaternary;
+    border-radius: 10px;
+    z-index: 3;
+    animation: slide-in 0.2s ease-in-out;
+}
+
+.popup-profile-header {
+  border-radius: 10px 10px 0 0;
+  background: $success;
+  color: hsl(220, 8%, 7%);
+  height: 60px;
+
+  .popup-profile-avatar {
+    position: relative;
+    left: 15px;
+    top: 15px;
+
+
+    .popup-profile-avatar-image {
+      width: 80px;
+      height: 80px;
+        border-radius: 50%;
+        outline: 6px solid $bg-quaternary;
+    }
+    .popup-profile-avatar-status {
+      position: relative;
+      bottom: 25px;
+      left: 60px;
+      width: 16px;
+      height:16px;
+      border-radius: 50%;
+      background: $success;
+      outline: 5px solid $bg-quaternary;
+    }
+  }
+}
+
+.popup-profile-body {
+  background: $bg-extra-dark;
+  margin: 50px 12px 12px;
+  padding: 12px;
+    border-radius: 10px;
+  color: $text-primary;
+  font-size: 14px;
+
+  &>div {
+    margin-bottom: 8px;
+  }
+
+  .popup-profile-display-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .popup-profile-user-name {
+  }
+
+  .popup-profile-divider {
+    margin: 12px 0;
+    border-bottom: 1px solid $bg-primary;
+  }
+
+  .popup-profile-detail-header {
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 15px;
+  }
+
+  .popup-profile-detail-body {
+    line-height: 18px;
+    display: flex;
+
+    .popup-profile-discord-icon {
+      margin-right: 5px;
+    }
+
+    .popup-profile-plus {
+      cursor: pointer;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+      background: $bg-primary;
+      border-radius: 4px;
+    }
+  }
+
+  .popup-profile-detail-note {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}

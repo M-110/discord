@@ -1,0 +1,85 @@
+.chat-users {
+  @include flex-column;
+  flex: 0 1 auto;
+  background: $bg-primary;
+  width: $bar-width;
+  height: 100%;
+}
+
+.chat-users-group {
+  @include flex-column;
+}
+
+.chat-users-group-header {
+  @include flex-row;
+  padding: 24px 8px 0 16px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: $text-tertiary;
+}
+
+.chat-users-group-header-name {
+  margin-right: 4px;
+}
+
+.chat-users-group-header-count {
+}
+
+.chat-users-group-list {
+  @include flex-column;
+  margin-top: 8px;
+}
+
+.chat-users-group-item {
+  @include flex-row;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 0 8px;
+  cursor: pointer;
+
+  &:hover {
+      background: $bg-secondary;
+      .chat-users-group-item-name {
+      color: $text-primary;
+      }
+  }
+}
+
+.users-name-container {
+  @include flex-column;
+  justify-content: center;
+  padding-left: 12px;
+  color: $text-tertiary;
+}
+
+.users-user-name {
+  @include flex-row;
+}
+
+.users-user-name-tag {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+    align-items: center;
+}
+
+.users-user-name-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.users-user-status {
+  font-size: 12px;
+}
+
+.user-container {
+    @include flex-row;
+}
+
+.offline-user {
+  opacity: 0.3;
+}

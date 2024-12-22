@@ -1,0 +1,83 @@
+.chat-header {
+  @include flex-row;
+  padding: 8px;
+  min-height: $top-bar-height;
+  box-shadow: $box-shadow-border;
+  z-index: 1;
+}
+
+.chat-header-channel {
+  @include flex-row;
+  flex: 1 1 auto;
+}
+
+.chat-header-channel-icon {
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  margin: 0 8px;
+  font-size: 24px;
+  font-weight: 300;
+  color: $text-tertiary;
+}
+
+.chat-header-channel-name {
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-light;
+}
+
+.chat-header-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex: 0 0 auto;
+}
+
+.chat-toolbar-list {
+  @include flex-row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.chat-toolbar-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 24px;
+  height: 24px;
+    margin: 0 8px;
+  cursor: pointer;
+}
+
+.chat-toolbar-search {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-left: 4px;
+  background: $bg-tertiary;
+  input {
+
+  color: $text-primary;
+    width: 120px;
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'gg sans', sans-serif;
+    transition: width 0.2s ease-in-out;
+  }
+  input::placeholder {
+    color: $text-tertiary;
+  }
+  input:focus {
+    width: 210px;
+  }
+}
+
+.chat-toolbar-search-icon {
+}
+

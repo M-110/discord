@@ -1,0 +1,36 @@
+$bgHue: 220;
+$bgSaturation: 7%;
+$textHue: 220;
+$textSaturation: 9%;
+$brandHue: 235;
+$brandSaturation: 84%;
+
+$box-shadow-border: 0 1px 0 hsl($bgHue, $bgSaturation, 13%);
+
+$bg-primary: hsl($bgHue, $bgSaturation, 18%);
+$bg-secondary: hsl($bgHue, $bgSaturation, 21%);
+$bg-tertiary: hsl($bgHue, $bgSaturation, 13%);
+$bg-quaternary: hsl($bgHue, $bgSaturation, 15%);
+
+$bg-primary-selected: hsl($bgHue, $bgSaturation, 26%);
+$bg-secondary-selected: hsl($bgHue, $bgSaturation, 23%);
+$bg-secondary-hover: hsl($bgHue, $bgSaturation, 20%);
+$bg-dark: hsl($bgHue, $bgSaturation, 11%);
+$bg-extra-dark: hsl($bgHue, $bgSaturation, 7%);
+
+$button-light: hsl($bgHue, $bgSaturation, 32%);
+$button-light-hover: hsl($bgHue, $bgSaturation, 44%);
+
+$text-primary: hsl($textHue, $textSaturation, 86%);
+$text-secondary: hsl($textHue, $textSaturation, 95%);
+$text-tertiary: hsl($textHue, $textSaturation, 61%);
+$text-quaternary: hsl($textHue, $textSaturation, 73%);
+$text-light: hsl($textHue, $textSaturation, 99%);
+$text-dark: hsl($textHue, $textSaturation, 45%);
+
+$success: hsl(145, 65%, 39%);
+$primary-light: hsl($brandHue, $brandSaturation, 75%);
+$primary: hsl($brandHue, $brandSaturation, 64%);
+$primary-hover: hsl($brandHue, $brandSaturation, 62%);
+$primary-selected: hsl($brandHue, $brandSaturation, 60%);
+

@@ -1,0 +1,89 @@
+.channel-section {
+  color: $text-tertiary;
+  font-weight: 500;
+  flex: 1 1 auto;
+}
+
+.server-header {
+  height: $top-bar-height;
+  color: $text-primary;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  box-shadow: $box-shadow-border;
+  cursor: pointer;
+  &:hover {
+    background: $bg-secondary-selected;
+  }
+  margin-bottom: 16px;
+}
+
+
+.channel-divider {
+    height: 1px;
+    background: $bg-primary-selected;
+    margin: 11px 7px 0;
+}
+
+.channel-group {
+
+}
+
+.channel-group-header {
+  padding: 16px 16px 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  &:hover {
+    color: $text-secondary;
+  }
+}
+
+.channel-group-list {
+  margin: 0 8px;
+}
+
+.channel-group-item {
+  @include flex-row;
+  padding: 6px 8px;
+  cursor: pointer;
+  &:hover {
+    background: $bg-secondary;
+    border-radius: 6px;
+    .channel-group-item-name {
+      color: $text-primary;
+    }
+  }
+}
+
+.channel-events {
+  margin: 0 10px;
+}
+
+.channel-group-item-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.channel-group-item-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.channel-group-item-selected {
+    background: $bg-primary-selected;
+    border-radius: 6px;
+    .channel-group-item-name {
+        color: $text-light;
+    }
+}

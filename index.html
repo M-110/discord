@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background: #5764f0">
+    <div class="login-background">
+        <div id="user-section" class="login-container">
+            <div class="login-title">
+                Choose an account
+            </div>
+            <div class="login-subtitle">
+                Select an account to log in with or add a new one.
+            </div>
+            <ul id="user-login-list" class="user-login-list">
+            <div class="spinner"></div>
+            </ul>
+            <div id="add-account-button" class="login-add-account">
+                Add an account
+            </div>
+        </div>
+        <div id="add-section" class="login-container" style="display: none">
+            <div class="login-title">
+                Add account
+            </div>
+            <div class="login-subtitle">
+                Create a username and a display name.
+            </div>
+            <div id="error" class="error-message">
+            </div>
+            <div class="add-account-input">
+                <label for="username">
+                    Username
+                </label>
+                    <input id="username" type="text" autocomplete="off">
+            </div>
+            <div class="add-account-input">
+                <label for="display">
+                    Display Name
+                </label>
+                    <input id="display" type="text" autocomplete="off">
+            </div>
+            <div class="button-row">
+                <div id="back-button" class="back-button">Back</div>
+                <button id="create-account" class="create-account-button">Create</button>
+            </div>
+        </div>
+    </div>
+<!--    <footer class="footer-home">-->
+<!--<span>Colin McLean - CSIS 311 | Module 5 Assignment 5b | </span>-->
+<!--    <a href="../index.html"> Return to Assignments Page</a> |-->
+<!--        Source: <a href="https://github.com/co4715hc/discord">https://github.com/co4715hc/discord</a>-->
+<!--</footer>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="module" src="js/login/Login.js"></script>
+</body>
+</html>

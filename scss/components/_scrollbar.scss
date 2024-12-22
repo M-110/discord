@@ -1,0 +1,15 @@
+﻿.chat-messages {
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: hsl(240, 6%, 7%);
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg-dark; /* Discord-like blue */
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-track {
+    background-color: $bg-primary;
+    border-radius: 8px;
+  }
+}

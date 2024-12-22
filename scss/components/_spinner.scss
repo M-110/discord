@@ -1,0 +1,18 @@
+﻿@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.spinner {
+    margin:  60px auto;
+    animation: spin 1.5s infinite linear;
+    border: 5px solid $primary-light;
+    border-radius: 50%;
+    border-top-color: $bg-primary;
+    height: 40px;
+    width: 40px
+}

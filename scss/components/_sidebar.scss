@@ -1,0 +1,6 @@
+﻿.sidebar {
+  @include flex-column;
+  width: $bar-width;
+  background: $bg-primary;
+}
+
