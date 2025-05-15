@@ -8,7 +8,6 @@ class Channel
 {
     public static function getChannels($serverId, $lastUpdated, $conn)
     {
-        // Update SQL query for SQLite compatibility
         $query = "SELECT channel_id, ca.channel_category_id, channel_name, channel_category_name, channel_topic
               FROM channel ch
                   JOIN channel_category ca ON ch.channel_category_id = ca.channel_category_id
@@ -36,7 +35,6 @@ class Channel
 
     public static function getFirstChannelId($serverId, $conn)
     {
-        // Update SQL query for SQLite compatibility
         $query = "SELECT channel_id 
                   FROM channel
                       JOIN channel_category ON channel.channel_category_id = channel_category.channel_category_id

@@ -210,11 +210,6 @@
         </div>
     </div>
 </main>
-    <footer class="footer-home">
-<span>Colin McLean - CSIS 311 | Module 5 Assignment 5b | </span>
-    <a href="../index.html"> Return to Assignments Page</a> |
-        Source: <a href="https://github.com/co4715hc/discord">https://github.com/co4715hc/discord</a>
-</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="module" src="js/app.js"></script>
 </body>

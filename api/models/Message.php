@@ -8,10 +8,9 @@ class Message
 {
     public static function getChannelMessages($channelId, $lastId, PDO $conn)
     {
-        // Modify query for SQLite compatibility
         $query = "SELECT 
                       m.message_id, 
-                      STRFTIME('%s', m.message_timestamp) AS message_timestamp, -- Convert to Unix timestamp
+                      STRFTIME('%s', m.message_timestamp) AS message_timestamp,
                       m.message_content, 
                       u.user_id, 
                       u.user_name, 
@@ -43,7 +42,6 @@ class Message
 
     public static function sendMessage($userId, $channelId, $message, PDO $conn)
     {
-        // Modify query for SQLite compatibility
         $query = "INSERT INTO message 
                   (message_timestamp, message_content, user_id, channel_id) 
                   VALUES (DATETIME('now'), :message, :user_id, :channel_id)";

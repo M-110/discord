@@ -2,7 +2,7 @@
 
 loadEnv(__DIR__ . '/../../.env');
 
-$appEnv = $_ENV['APP_ENV'] ?? 'production'; // Default to production if not specified
+$appEnv = $_ENV['APP_ENV'] ?? 'production';
 $appDebug = filter_var($_ENV['APP_DEBUG'] ?? false, FILTER_VALIDATE_BOOLEAN);
 
 $dbPath = $_ENV['DB_PATH'] ?? realpath(__DIR__ . "/../../discord.db");
@@ -19,8 +19,8 @@ $conn = null;
 
 try {
     $conn = new PDO("sqlite:$dbPath");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Enable error reporting
-    $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // Fetch associative arrays by default
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     if ($appDebug) {
         die("Database connection failed: " . $e->getMessage());
@@ -43,7 +43,7 @@ function loadEnv(string $filePath): void
 
     $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
-        if (strpos(trim($line), '#') === 0) continue; // Skip comments
+        if (strpos(trim($line), '#') === 0) continue;
         [$key, $value] = explode('=', $line, 2);
         $_ENV[trim($key)] = trim($value);
         $_SERVER[trim($key)] = trim($value);
